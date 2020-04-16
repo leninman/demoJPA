@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WebApplication1/NewWebService?WSDL" uri="wsdl/localhost_8080/WebApplication1/NewWebService.wsdl"/>
+    <system systemId="http://localhost:8080/WebApplication1/NewWebService?xsd=1" uri="wsdl/localhost_8080/WebApplication1/NewWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WebApplication1/MathServiceImplService?Tester" uri="wsdl/localhost_8080/WebApplication1/MathServiceImplService.tester"/>
+    <system systemId="http://localhost:8080/WebApplication1/MathServiceImplService?WSDL" uri="wsdl/localhost_8080/WebApplication1/MathServiceImplService.wsdl"/>
+    <system systemId="http://localhost:8080/WebApplication1/MathServices?WSDL" uri="wsdl/localhost_8080/WebApplication1/MathServices.wsdl"/>
+    <system systemId="http://localhost:8080/WebApplication1/MathServices?xsd=1" uri="wsdl/localhost_8080/WebApplication1/MathServices.xsd_1"/>
+    <system systemId="http://localhost:8080/prueba/service?wsdl" uri="wsdl/localhost_8080/prueba/service.wsdl"/>
+    <system systemId="http://localhost:8080/prueba/service?xsd=1" uri="wsdl/localhost_8080/prueba/service.xsd_1.xsd"/>
+    <system systemId="https://127.0.0.1:8443/prueba/service?wsdl" uri="wsdl/127.0.0.1_8443/prueba/service.wsdl"/>
+    <system systemId="https://127.0.0.1:8443/prueba/service?xsd=1" uri="wsdl/127.0.0.1_8443/prueba/service.xsd_1.xsd"/>
+    <system systemId="https://localhost:8443/prueba/service?wsdl" uri="wsdl/localhost_8443/prueba/service.wsdl"/>
+    <system systemId="https://localhost:8443/prueba/service?xsd=1" uri="wsdl/localhost_8443/prueba/service.xsd_1.xsd"/>
+    <system systemId="https://localhost:8443/prueba/CalculatorImpl?wsdl" uri="wsdl/localhost_8443/prueba/CalculatorImpl.wsdl"/>
+</catalog>
