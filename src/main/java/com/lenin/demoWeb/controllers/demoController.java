@@ -63,7 +63,7 @@ public class demoController {
 
 
 
-         model.addAttribute("Suma", this.Suma(2, 3));
+//         model.addAttribute("Suma", this.Suma(2, 3));
          
          
 
@@ -71,52 +71,52 @@ public class demoController {
          return "Inicio";
     }
 
-public int Suma(int a,int b){    
-int result = 0;
-    try { // Call Web Service Operation
-    com.lenin.demoWeb.services.CalculatorImplService service;
-    service = new com.lenin.demoWeb.services.CalculatorImplService();
-    com.lenin.demoWeb.services.CalculatorI port = service.getCalculatorImplPort();
-    // TODO initialize WS operation arguments here
-    
-    
-     Map<String, Object> req_ctx = ((BindingProvider)port).getRequestContext();
-     req_ctx.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY,"https://localhost:8443/prueba/CalculatorImpl?wsdl");
-
-        Map<String, List<String>> headers = new HashMap<String, List<String>>();
-        headers.put("uname", Collections.singletonList("lenin"));
-        headers.put("pass", Collections.singletonList("lenin123"));
-        req_ctx.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-//    Map requestCtx = ((BindingProvider) service).getRequestContext();
-//    requestCtx.put(BindingProvider.USERNAME_PROPERTY, "lenin");
-//    requestCtx.put(BindingProvider.PASSWORD_PROPERTY, "lenin123");
- 
-//    String productionUrl = "https://localhost:8443/prueba/CalculatorImpl?wsdl";
-//    requestCtx.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, productionUrl);
-    
-//    requestCtx.put(BindingProvider.SOAPACTION_USE_PROPERTY, Boolean.TRUE);
-//        requestCtx.put(BindingProvider.SESSION_MAINTAIN_PROPERTY, Boolean.TRUE);
-    
-    
-    int arg0 = a;
-    int arg1 = b;
-    // TODO process result here
-    result = port.add(arg0, arg1);
-  //  System.out.println("Result = "+result);
-} catch (Exception ex) {
-    // TODO handle custom exceptions here
-}
-  return result;
-}
+//public int Suma(int a,int b){    
+//int result = 0;
+//    try { // Call Web Service Operation
+//    com.lenin.demoWeb.services.CalculatorImplService service;
+//    service = new com.lenin.demoWeb.services.CalculatorImplService();
+//    com.lenin.demoWeb.services.CalculatorI port = service.getCalculatorImplPort();
+//    // TODO initialize WS operation arguments here
+//    
+//    
+//     Map<String, Object> req_ctx = ((BindingProvider)port).getRequestContext();
+//     req_ctx.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY,"https://localhost:8443/prueba/CalculatorImpl?wsdl");
+//
+//        Map<String, List<String>> headers = new HashMap<String, List<String>>();
+//        headers.put("uname", Collections.singletonList("lenin"));
+//        headers.put("pass", Collections.singletonList("lenin123"));
+//        req_ctx.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
+//    
+//    
+//    
+//    
+//    
+//    
+//    
+//    
+//    
+////    Map requestCtx = ((BindingProvider) service).getRequestContext();
+////    requestCtx.put(BindingProvider.USERNAME_PROPERTY, "lenin");
+////    requestCtx.put(BindingProvider.PASSWORD_PROPERTY, "lenin123");
+// 
+////    String productionUrl = "https://localhost:8443/prueba/CalculatorImpl?wsdl";
+////    requestCtx.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, productionUrl);
+//    
+////    requestCtx.put(BindingProvider.SOAPACTION_USE_PROPERTY, Boolean.TRUE);
+////        requestCtx.put(BindingProvider.SESSION_MAINTAIN_PROPERTY, Boolean.TRUE);
+//    
+//    
+//    int arg0 = a;
+//    int arg1 = b;
+//    // TODO process result here
+//    result = port.add(arg0, arg1);
+//  //  System.out.println("Result = "+result);
+//} catch (Exception ex) {
+//    // TODO handle custom exceptions here
+//}
+//  return result;
+//}
 
     
     
